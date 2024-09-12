@@ -1,4 +1,4 @@
-# 이 프로그램은 주어진 문자열이 **회문(palindrome)**인지 판별하는 프로그램입니다.
+# 이 프로그램은 주어진 문자열이 회문(palindrome)인지 판별하는 프로그램입니다.
 
 [메인 페이지로 돌아가기](https://github.com/jaeyong0311?tab=repositories)
 
