@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j, n, len;
+    char s[30], t[30], ox[10];
+    scanf("%d", &n);
+    
+    for(i=0;i<n;i++)
+    {
+        while(getchar()!='\n');
+        scanf("%[^\n]s", s);
+        
+        len=0;
+        for(j=0;s[j]!='\0';j++)
+        {
+            if(s[j]!=' ' && s[j]!='.')t[len++]=s[j];
+        }
+        for(j=0;j<len/2;j++)
+        {
+            if(t[j]!=t[len-1-j])break;
+        }
+        if(j==len/2)
+            ox[i]='O';
+        else
+            ox[i]='X';
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%c\n", ox[i]);
+    }
+    return 0;
+}
